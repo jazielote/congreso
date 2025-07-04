@@ -775,8 +775,8 @@ footer::before {
 
 @media (max-width: 576px) {
     :root {
-        --header-height: 200px;
-        --header-height-scrolled: 200px;
+        --header-height: 210px;
+        --header-height-scrolled: 210px;
     }
     
     main.container {
