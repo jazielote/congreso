@@ -226,6 +226,22 @@ section:last-child {
     font-size: 0.9rem;
 }
 
+.materia-header.psicologia {
+    background: linear-gradient(to right, #3498db, #2980b9);
+}
+
+.materia-header.ministerio {
+    background: linear-gradient(to right, #9b59b6, #8e44ad);
+}
+
+.fa-brain {
+    color: #3498db;
+}
+
+.fa-graduation-cap, .fa-university, .fa-church {
+    color: var(--primary-color);
+}
+
 .btn-primary {
     background: var(--primary-color);
     color: var(--white);
@@ -391,7 +407,7 @@ section:last-child {
 }
 
 .materia-header.liderazgo {
-    background: linear-gradient(to right, var(--dark-color), #3498db);
+    background: linear-gradient(to right, #5fbfff, #3498db);
 }
 
 .materia-header i {
