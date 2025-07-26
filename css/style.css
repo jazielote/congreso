@@ -455,6 +455,31 @@ section:last-child {
     text-align: center;
 }
 
+/* Agrega esto al final del archivo style.css */
+.materia-header.oracion {
+    background: linear-gradient(to right, #3498db, #2c3e50);
+}
+
+.fa-pray {
+    color: #3498db;
+}
+
+/* Estilo para destacar la relación padre-hijo */
+.familia-payares {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+    padding: 10px;
+    background: rgba(106, 48, 147, 0.05);
+    border-radius: var(--border-radius-sm);
+}
+
+.familia-payares i {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
 .sesion-detalle {
     flex: 1;
 }
