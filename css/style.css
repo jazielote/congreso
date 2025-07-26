@@ -118,7 +118,7 @@ p {
 
 /* ===== Header ===== */
 header {
-    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    background-color: var(--primary-color);
     color: var(--white);
     box-shadow: var(--shadow-lg);
     position: fixed;
@@ -130,9 +130,8 @@ header {
 }
 
 .header-scrolled {
-    padding: 0.5rem 0;
-    backdrop-filter: blur(5px);
-    background: rgba(106, 48, 147, 0.95);
+    background-color: var(--primary-color);
+    opacity: 0.9;
     height: var(--header-height-scrolled);
 }
 
@@ -638,6 +637,11 @@ section:last-child {
     outline: none;
     border-color: var(--primary-color);
     box-shadow: 0 0 0 3px rgba(106, 48, 147, 0.1);
+}
+
+/* Agrega esto al final del archivo CSS, antes de las media queries */
+.materia-header.familia {
+    background: linear-gradient(to right, #e67e22, #d35400);
 }
 
 .precios {
