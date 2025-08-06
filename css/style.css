@@ -457,7 +457,7 @@ section:last-child {
 
 /* Agrega esto al final del archivo style.css */
 .materia-header.oracion {
-    background: linear-gradient(to right, #3498db, #2c3e50);
+    background: linear-gradient(to right, #3498db, #2289f0);
 }
 
 .fa-pray {
@@ -667,6 +667,10 @@ section:last-child {
 /* Agrega esto al final del archivo CSS, antes de las media queries */
 .materia-header.familia {
     background: linear-gradient(to right, #e67e22, #d35400);
+}
+
+.materia-header.redes{
+    background: linear-gradient(to right, #f762ef, #df00d3);
 }
 
 .precios {
