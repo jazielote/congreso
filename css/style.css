@@ -454,424 +454,7 @@ section:last-child {
     text-align: center;
 }
 
-/* Agrega esto al final del archivo style.css */
-.materia-header.oracion {
-    background: linear-gradient(to right, #3498db, #2289f0);
-}
-
-.fa-pray {
-    color: #3498db;
-}
-
-/* Estilo para destacar la relación padre-hijo */
-.familia-payares {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 15px 0;
-    padding: 10px;
-    background: rgba(106, 48, 147, 0.05);
-    border-radius: var(--border-radius-sm);
-}
-
-.familia-payares i {
-    color: var(--primary-color);
-    font-size: 1.2rem;
-}
-
-.sesion-detalle {
-    flex: 1;
-}
-
-/* Estilos para la biografía */
-.biografia {
-    line-height: 1.8;
-    margin-bottom: 1.5rem;
-}
-
-.biografia blockquote {
-    background: rgba(106, 48, 147, 0.08);
-    border-left: 4px solid var(--primary-color);
-    padding: 1rem;
-    margin: 1.5rem 0;
-    font-style: italic;
-}
-
-.ministerio-lista {
-    margin: 1.5rem 0;
-    list-style: none;
-}
-
-.ministerio-lista li {
-    padding: 0.5rem 0;
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-}
-
-.ministerio-lista i {
-    color: var(--primary-color);
-    width: 20px;
-    text-align: center;
-}
-
-.testimonio {
-    background: rgba(241, 196, 15, 0.1);
-    padding: 1.5rem;
-    border-radius: var(--border-radius-md);
-    margin: 1.5rem 0;
-    border-left: 4px solid var(--accent-color);
-}
-
-.testimonio h4 {
-    color: var(--dark-color);
-    margin-bottom: 0.8rem;
-}
-
-/* Estilos específicos para el perfil médico-pastoral */
-.destacado-azul {
-    background: rgba(74, 144, 226, 0.1);
-    border-left: 4px solid #4a90e2;
-    padding: 1rem;
-    font-size: 1.1rem;
-    margin: 1.5rem 0;
-}
-
-.datos-clave {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    margin: 1.5rem 0;
-}
-
-.dato-item {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-    padding: 0.5rem;
-    background: rgba(106, 48, 147, 0.05);
-    border-radius: var(--border-radius-sm);
-}
-
-.dato-item i {
-    color: var(--primary-color);
-    font-size: 1.1rem;
-    width: 25px;
-    text-align: center;
-}
-
-/* Ajuste para iconos profesionales */
-.fa-briefcase-medical, .fa-hospital {
-    color: #e74c3c;
-}
-
-.fa-lightbulb, .fa-business-time {
-    color: #f1c40f;
-}
-
-/* ===== Sección Programa ===== */
-.programa-dias {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.dia {
-    background: var(--white);
-    padding: 1.5rem;
-    border-radius: var(--border-radius-md);
-    box-shadow: var(--shadow-sm);
-    transition: var(--transition);
-}
-
-.dia:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-md);
-}
-
-.dia h4 {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-.dia h4 i {
-    color: var(--secondary-color);
-}
-
-.dia ul li {
-    padding: 0.5rem 0;
-    border-bottom: 1px dashed var(--light-gray);
-    display: flex;
-    gap: 0.5rem;
-}
-
-.dia ul li:last-child {
-    border-bottom: none;
-}
-
-.dia ul li strong {
-    color: var(--dark-color);
-    min-width: 70px;
-    display: inline-block;
-}
-
-/* ===== Sección Registro ===== */
-.registro-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-    margin-top: 2rem;
-    align-items: flex-start;
-}
-
-.registro-info {
-    flex: 1;
-    min-width: 300px;
-}
-
-.registro-form {
-    flex: 1;
-    min-width: 300px;
-    background: var(--white);
-    padding: 2rem;
-    border-radius: var(--border-radius-lg);
-    box-shadow: var(--shadow-sm);
-}
-
-.form-group {
-    margin-bottom: 1.5rem;
-}
-
-.form-group input,
-.form-group select {
-    width: 100%;
-    padding: 0.8rem 1rem;
-    border: 1px solid var(--light-gray);
-    border-radius: var(--border-radius-md);
-    font-size: 1rem;
-    transition: var(--transition);
-}
-
-.form-group input:focus,
-.form-group select:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(106, 48, 147, 0.1);
-}
-
-/* Agrega esto al final del archivo CSS, antes de las media queries */
-.materia-header.familia {
-    background: linear-gradient(to right, #e67e22, #d35400);
-}
-
-.materia-header.redes{
-    background: linear-gradient(to right, #f762ef, #df00d3);
-}
-
-.precios {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-    margin: 2rem 0;
-}
-
-.precio-item {
-    background: var(--white);
-    padding: 1.5rem;
-    border-radius: var(--border-radius-md);
-    box-shadow: var(--shadow-sm);
-    text-align: center;
-}
-
-.precio-item h4 {
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-.precio {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--secondary-color);
-    margin-bottom: 0.5rem;
-}
-
-.precio span {
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--medium-gray);
-}
-
-/* ===== Sección Contacto ===== */
-.contacto-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-    margin-top: 2rem;
-}
-
-.contacto-info {
-    flex: 1;
-    min-width: 300px;
-}
-
-.contacto-info p {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-}
-
-.contacto-info i {
-    width: 30px;
-    height: 30px;
-    background: var(--primary-color);
-    color: var(--white);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.mapa-container {
-    flex: 1;
-    min-width: 300px;
-    border-radius: var(--border-radius-md);
-    overflow: hidden;
-    box-shadow: var(--shadow-sm);
-}
-
-.whatsapp-btn-container {
-    margin-top: 2rem;
-}
-
-.whatsapp-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: #25D366;
-    color: var(--white);
-    padding: 1rem 1.5rem;
-    border-radius: var(--border-radius-full);
-    font-weight: 600;
-    transition: var(--transition);
-}
-
-.whatsapp-btn:hover {
-    background: #128C7E;
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-md);
-}
-
-/* ===== Footer ===== */
-footer {
-    background: linear-gradient(135deg, var(--dark-color), var(--black));
-    color: var(--white);
-    padding: 3rem 0;
-    margin-top: 4rem;
-    position: relative;
-}
-
-footer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 5px;
-    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-}
-
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.footer-logo {
-    height: 80px;
-    width: 80px;
-    margin-bottom: 1rem;
-}
-
-.footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-    justify-content: center;
-}
-
-.footer-col {
-    min-width: 200px;
-}
-
-.footer-col h4 {
-    color: var(--white);
-    margin-bottom: 1.5rem;
-    position: relative;
-    padding-bottom: 0.5rem;
-}
-
-.footer-col h4::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 40px;
-    height: 2px;
-    background: var(--secondary-color);
-}
-
-.footer-col a {
-    display: block;
-    margin-bottom: 0.8rem;
-    color: var(--light-gray);
-    transition: var(--transition);
-}
-
-.footer-col a:hover {
-    color: var(--white);
-    transform: translateX(5px);
-}
-
-.social-links {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-}
-
-.social-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: var(--transition);
-    color: var(--white);
-}
-
-.social-icon:hover {
-    background: var(--primary-color);
-    transform: translateY(-3px);
-}
-
-.copyright {
-    text-align: center;
-    margin-top: 2rem;
-    color: var(--light-gray);
-    font-size: 0.9rem;
-}
-
-.copyright p:first-child {
-    margin-bottom: 0.5rem;
-}
-
-/* ===== Estilos Especiales Organizador ===== */
+/* Estilos específicos para el organizador */
 .organizador-hero {
     background: linear-gradient(135deg, #2c3e50, #4a1d6b);
     color: white;
@@ -1178,84 +761,6 @@ footer::before {
     100% { transform: scale(1); }
 }
 
-/* Efecto de partículas */
-.particle {
-    position: absolute;
-    background: rgba(255,255,255,0.5);
-    border-radius: 50%;
-    animation: float linear infinite;
-    z-index: 1;
-}
-
-@keyframes float {
-    to {
-        transform: translateY(-100vh) rotate(360deg);
-    }
-}
-
-/* ===== Animaciones ===== */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadeInRight {
-    from {
-        opacity: 0;
-        transform: translateX(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.scroll-animation {
-    opacity: 0;
-    transition: opacity 0.6s, transform 0.6s;
-}
-
-.fade-in-up {
-    animation: fadeInUp 0.8s forwards;
-}
-
-.fade-in-left {
-    animation: fadeInLeft 0.8s forwards;
-}
-
-.fade-in-right {
-    animation: fadeInRight 0.8s forwards;
-}
-
-.delay-1 {
-    animation-delay: 0.2s;
-}
-
-.delay-2 {
-    animation-delay: 0.4s;
-}
-
-.delay-3 {
-    animation-delay: 0.6s;
-}
-
 /* ===== Media Queries ===== */
 @media (max-width: 992px) {
     .container {
@@ -1304,37 +809,83 @@ footer::before {
     h2 {
         font-size: 1.8rem;
     }
+
+    /* Ajustes específicos para el organizador en tablets */
+    .organizador-hero {
+        padding: 2rem 0;
+        margin: 2rem 0;
+        border-radius: 10px;
+    }
     
     .organizador-header h2 {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
+        line-height: 1.2;
     }
     
     .organizador-tagline {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     
-    .organizador-content {
-        flex-direction: column;
+    .organizador-badge {
+        font-size: 0.9rem;
+        padding: 0.4rem 1rem;
     }
     
-    .organizador-image-wrapper {
-        transform: perspective(1000px) rotateY(0deg);
+    .timeline-item {
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
     }
     
     .timeline-year {
-        width: 40px;
-        height: 40px;
-        font-size: 1rem;
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
         left: -25px;
     }
     
-    .ponente-container {
-        flex-direction: column;
+    .timeline-content {
+        padding-left: 30px;
     }
     
-    .registro-container,
-    .contacto-container {
-        flex-direction: column;
+    .timeline-content h4 {
+        font-size: 1.1rem;
+    }
+    
+    .timeline-content p {
+        font-size: 0.9rem;
+    }
+    
+    .organizador-message {
+        padding: 1.5rem;
+    }
+    
+    .organizador-message blockquote {
+        font-size: 1rem;
+    }
+    
+    .signature {
+        font-size: 0.9rem;
+    }
+    
+    .family-member {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .organizador-role {
+        padding: 0.8rem;
+    }
+    
+    .organizador-role i {
+        font-size: 1.2rem;
+    }
+    
+    .organizador-role h4 {
+        font-size: 1rem;
+    }
+    
+    .organizador-role p {
+        font-size: 0.8rem;
     }
 }
 
@@ -1360,18 +911,56 @@ footer::before {
     h2 {
         font-size: 1.6rem;
     }
-    
+
+    /* Ajustes específicos para el organizador en móviles */
     .organizador-header h2 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     
     .organizador-badge {
-        font-size: 1rem;
-        padding: 0.4rem 1.2rem;
+        font-size: 0.8rem;
+    }
+    
+    .organizador-content {
+        gap: 2rem;
+    }
+    
+    .organizador-image-container {
+        min-width: 100%;
+    }
+    
+    .organizador-details {
+        min-width: 100%;
+    }
+    
+    .timeline-year {
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+        left: -20px;
+    }
+    
+    .timeline-content {
+        padding-left: 25px;
+    }
+    
+    .organizador-message {
+        padding: 1rem;
     }
     
     .organizador-footer {
-        grid-template-columns: 1fr;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    
+    .organizador-family {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+    }
+    
+    .family-member {
+        flex: 1 0 calc(50% - 1rem);
+        justify-content: center;
     }
     
     .logo {
