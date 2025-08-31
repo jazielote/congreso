@@ -833,6 +833,243 @@ footer::before {
     margin: 2rem 0;
 }
 
+/* ===== ESTILOS PARA COORDINADORES ===== */
+.coordinadores-section {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #f8f9ff 0%, #f0f3ff 100%);
+    border-radius: 16px;
+    margin: 3rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.coordinadores-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect fill="none" stroke="rgba(106, 48, 147, 0.03)" stroke-width="0.5" width="20" height="20" x="0" y="0" /></svg>');
+    animation: rotateBackground 120s linear infinite;
+    z-index: 0;
+}
+
+@keyframes rotateBackground {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.coordinadores-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 2;
+    padding: 0 20px;
+}
+
+.coordinadores-header h2 {
+    font-size: 2.5rem;
+    color: #6a3093;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.coordinadores-header p {
+    font-size: 1.1rem;
+    color: #555555;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.coordinadores-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    position: relative;
+    z-index: 2;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.coordinador-card {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    text-align: center;
+    border: 1px solid rgba(106, 48, 147, 0.1);
+}
+
+.coordinador-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+}
+
+.coordinador-header {
+    background: linear-gradient(135deg, #6a3093, #4a1d6b);
+    padding: 1.8rem 1.5rem;
+    color: #ffffff;
+    position: relative;
+}
+
+.coordinador-img-container {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    overflow: hidden;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+}
+
+.coordinador-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.coordinador-card:hover .coordinador-img-container img {
+    transform: scale(1.12);
+}
+
+.coordinador-body {
+    padding: 1.8rem;
+}
+
+.coordinador-name {
+    font-size: 1.4rem;
+    color: #6a3093;
+    margin: 0.8rem 0;
+    font-weight: 700;
+}
+
+.coordinador-role {
+    display: inline-block;
+    background: rgba(106, 48, 147, 0.1);
+    color: #6a3093;
+    padding: 0.5rem 1.2rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+.coordinador-info {
+    color: #555555;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.coordinador-info i {
+    color: #6a3093;
+    font-size: 1rem;
+}
+
+.coordinador-social {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.coordinador-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background: rgba(106, 48, 147, 0.1);
+    color: #6a3093;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.coordinador-social a:hover {
+    background: #6a3093;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.coordinador-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 0;
+    background: linear-gradient(to bottom, #f1c40f, #e74c3c);
+    transition: height 0.5s ease;
+}
+
+.coordinador-card:hover::after {
+    height: 100%;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .coordinadores-container {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+}
+
+@media (max-width: 992px) {
+    .coordinadores-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .coordinadores-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .coordinadores-header h2 {
+        font-size: 2rem;
+    }
+    
+    .coordinador-img-container {
+        width: 110px;
+        height: 110px;
+    }
+}
+
+@media (max-width: 576px) {
+    .coordinadores-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .coordinadores-section {
+        padding: 3rem 0;
+    }
+    
+    .coordinador-img-container {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .coordinador-name {
+        font-size: 1.3rem;
+    }
+    
+    .coordinador-body {
+        padding: 1.5rem;
+    }
+}
+
 .social-icon {
     display: flex;
     align-items: center;
