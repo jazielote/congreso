@@ -114,7 +114,24 @@ p {
     margin-bottom: 1.5rem;
     color: var(--text-light);
 }
+.cta-buttons {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 12px 25px; /* Más padding para un mejor diseño */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
 
+.cta-buttons:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px); /* Un sutil efecto al pasar el cursor */
+    box-shadow: var(--shadow-md);
+}
 /* ===== Header ===== */
 header {
     background-color: var(--primary-color);
