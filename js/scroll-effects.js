@@ -8,19 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const observer = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Activar animación cuando el elemento es visible
-                entry.target.style.opacity = 1;
-                
                 // Añadir clase active para las animaciones CSS
-                if (entry.target.classList.contains('scroll-animation')) {
-                    const animationClass = Array.from(entry.target.classList).find(cls => 
-                        cls.startsWith('fade-in-')
-                    );
-                    
-                    if (animationClass) {
-                        entry.target.classList.add('active');
-                    }
-                }
+                entry.target.classList.add('active');
             }
         });
     }, observerOptions);

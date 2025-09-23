@@ -34,7 +34,7 @@
         </div>
       </div>
     </div>
-    
+
     <header id="main-header">
       <div class="container">
         <img
@@ -236,6 +236,19 @@
           </div>
           <div class="reconocimiento-card">
             <img
+              src="img/katy.jpg"
+              alt="Katy"
+              loading="lazy"
+            />
+            <h3>Katy</h3>
+            <p>
+              Por su gran aporte al ponerse a la orden con su apoyo en la decoración
+              del congreso, creando un ambiente acogedor y especial para todos
+              los asistentes.
+            </p>
+          </div>
+          <div class="reconocimiento-card">
+            <img
               src="img/jaziel-marquez.jpg"
               alt="Jaziel Marquez"
               loading="lazy"
@@ -317,7 +330,10 @@
             Tu navegador no soporta el elemento de video.
           </video>
           <div class="especial-caption">
-            <h3>¡Dijo que Sí! <i class="fas fa-heart" style="color: var(--secondary-color);"></i></h3>
+            <h3>
+              ¡Dijo que Sí!
+              <i class="fas fa-heart" style="color: var(--secondary-color)"></i>
+            </h3>
             <p>
               Un conmovedor acto que nos recordó que el amor de Dios también se
               manifiesta en las relaciones humanas. Una verdadera bendición para
@@ -343,7 +359,9 @@
             />
             <div class="organizador-details">
               <p class="organizador-name">Pastor Johao Suarez</p>
-              <p class="organizador-rol">Líder Principal - Coordinador Regional de Jovenes</p>
+              <p class="organizador-rol">
+                Líder Principal - Coordinador Regional de Jovenes
+              </p>
             </div>
           </div>
           <div
@@ -405,28 +423,28 @@
     <script src="js/scroll-effects.js"></script>
     <script>
       // Muestra el modal cuando la página se carga
-      document.addEventListener('DOMContentLoaded', (event) => {
+      document.addEventListener("DOMContentLoaded", (event) => {
         const modal = document.getElementById("welcomeModal");
         const closeBtn = document.querySelector(".close-button");
-        const video = modal.querySelector('video');
+        const video = modal.querySelector("video");
 
         // Muestra el modal al cargar la página
         modal.style.display = "block";
         video.play();
 
         // Cuando el usuario haga clic en (x), cierra el modal
-        closeBtn.onclick = function() {
+        closeBtn.onclick = function () {
           modal.style.display = "none";
           video.pause();
-        }
+        };
 
         // Cuando el usuario haga clic en cualquier lugar fuera del modal, también lo cierra
-        window.onclick = function(event) {
+        window.onclick = function (event) {
           if (event.target == modal) {
             modal.style.display = "none";
             video.pause();
           }
-        }
+        };
       });
     </script>
   </body>
