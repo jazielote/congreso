@@ -360,9 +360,11 @@ section:last-child {
     transform: translateY(-5px);
 }
 
-.especial-card img {
+.especial-card img,
+.especial-card video {
     width: 100%;
     height: auto;
+    max-height: 400px;
     display: block;
     object-fit: cover;
 }
